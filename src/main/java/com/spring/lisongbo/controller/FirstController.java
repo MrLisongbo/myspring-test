@@ -11,7 +11,7 @@ import com.spring.lisongbo.pojo.User;
 @RequestMapping(name = "firstcontroller/login")
 public class FirstController {
     
-    
+    private float num3;
     private String str;
     private int num;
     public String getStr() {
