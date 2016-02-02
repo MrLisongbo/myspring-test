@@ -12,6 +12,7 @@ import com.spring.lisongbo.pojo.User;
 public class FirstController {
     
 
+    private double num2;
     @RequestMapping(name = "op_user_login.jsp")
     public String login(@Validated @RequestBody User user) {
         return "home";
