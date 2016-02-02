@@ -11,6 +11,21 @@ import com.spring.lisongbo.pojo.User;
 @RequestMapping(name = "firstcontroller/login")
 public class FirstController {
     
+    
+    private String str;
+    private int num;
+    public String getStr() {
+        return str;
+    }
+    public void setStr(String str) {
+        this.str = str;
+    }
+    public int getNum() {
+        return num;
+    }
+    public void setNum(int num) {
+        this.num = num;
+    }
 
     @RequestMapping(name = "op_user_login.jsp")
     public String login(@Validated @RequestBody User user) {
