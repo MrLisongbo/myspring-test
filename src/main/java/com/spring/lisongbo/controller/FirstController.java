@@ -8,13 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.spring.lisongbo.pojo.User;
 
 @Controller
-@RequestMapping(name="firstcontroller/login")
+@RequestMapping(name = "firstcontroller/login")
 public class FirstController {
-  private String str;
-  private int num;
+    
 
-    @RequestMapping(name="op_user_login.jsp")
-    public String login( @Validated @RequestBody User user){
+    @RequestMapping(name = "op_user_login.jsp")
+    public String login(@Validated @RequestBody User user) {
         return "home";
     }
 }
